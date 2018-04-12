@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.vincent.crypto.MainActivity">
+
+    <Button
+        android:id="@+id/btnCesar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="cesar"
+        android:text="César"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <Button
+        android:id="@+id/btnAtbash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="atbash"
+        android:text="Atbash" />
+
+    <Button
+        android:id="@+id/btnVigenere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="vigenere"
+        android:text="Vigenère"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <Button
+        android:id="@+id/btnPlayFair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="playfair"
+        android:text="Playfair"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="167dp" />
+
+    <Button
+        android:id="@+id/btnPolybe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="polybe"
+        android:text="Carré Polybe"
+        tools:layout_editor_absoluteX="131dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+    <Button
+        android:id="@+id/btnTranspositionRectangulaire"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="rectangulaire"
+        android:text="Transposition Rectangulaire"
+        tools:layout_editor_absoluteX="69dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <Button
+        android:id="@+id/btnDelastelle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="delastelle"
+        android:text="Delastelle" />
+
+</LinearLayout>

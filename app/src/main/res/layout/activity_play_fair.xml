@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vincent.crypto.MyActivities.PlayFairActivity">
+
+
+    <EditText
+        android:id="@+id/edtKey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Clé"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edtMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edtKey"
+        android:layout_below="@+id/edtKey"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:hint="Message"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnCrypter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edtMessage"
+        android:layout_centerVertical="true"
+        android:onClick="crypt"
+        android:text="Crypter" />
+
+    <Button
+        android:id="@+id/btnDecrypter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCrypter"
+        android:layout_alignBottom="@+id/btnCrypter"
+        android:layout_alignEnd="@+id/edtMessage"
+        android:onClick="decrypt"
+        android:text="Decrypter" />
+
+    <TextView
+        android:id="@+id/tvResponse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/btnCrypter"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="38dp" />
+
+</RelativeLayout>
